@@ -1,0 +1,143 @@
+/* Fonts from google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500&family=Oswald:wght@200;400;500&display=swap');
+
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Disable img style when no src included, removed the alt attribute */
+img[src=""] {
+    content: url("data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==");
+}
+
+
+/* Input styles */
+input {
+    width: 200px;
+    font-size: 2.5rem;
+    text-align: center;
+    color: #61B169;
+    border: 0px;
+    border-bottom: 2px solid #61B169;
+    padding: .5rem 0;
+    box-shadow: 4px 3px 9px 1px rgba(0, 0, 0, 0.25);
+}
+
+::placeholder {
+    color: grey;
+    opacity: .2;
+}
+
+input:focus {
+    transition: ease-in-out, width .35s ease-in-out;
+    outline: none;
+}
+
+/* end of input styles */
+
+
+/* Block style */
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 900px;
+
+
+    background: url('/blob/master/resources/ph-dotted.png');
+    background-repeat: no-repeat;
+    background-position: 580px 10px;
+    background-size: 30% 60%;
+}
+
+header > h1 {
+    font-family: 'Oswald', 'Sans Serif';
+    letter-spacing: .5rem;
+}
+
+.content>.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    width: 80%;
+
+    margin-bottom: 3rem;
+
+}
+
+.content>.main>section {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    width: 100%;
+
+    margin: 3rem 0 0;
+
+}
+
+.content>section {
+
+    display: flex;
+    justify-content: space-evenly;
+
+    width: 80%;
+
+}
+
+.content>section>aside {
+
+    margin: 0 1rem;
+
+    width: 230px;
+
+    padding: 0 .6rem .6rem;
+
+    box-shadow: 4px 3px 9px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 1rem;
+    background: #61B169;
+    color: white;
+}
+
+.content>section>aside>p {
+
+    font-family: 'montserrat', serif;
+
+    font-weight: 300;
+}
+
+
+.content>section>aside>.title {
+    margin: .5rem 0rem;
+    text-align: center;
+
+    border-bottom: 2px solid white;
+}
+
+.content>section>aside>p:nth-child(2) {
+    text-align: justify;
+    margin-bottom: .5rem;
+}
+
+.content>section>aside>p:nth-child(3),
+p:nth-child(4) {
+    text-align: center;
+}

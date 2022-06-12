@@ -1,0 +1,57 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+}
+
+.mysvg {
+    fill: red;
+}
+
+.input-field {
+    position: absolute;
+    width: 142px;
+    height: 59px;
+    left: 612px;
+    top: 270px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 39px;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: #000000;
+
+    border: 0;
+    outline: 0;
+    border-bottom: 2px solid blue;
+
+}
+
+.result {
+    position: absolute;
+    width: 292px;
+    height: 121px;
+    left: 537px;
+    top: 150px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 100px;
+    line-height: 121px;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: #000000;
+}
