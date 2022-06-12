@@ -3,11 +3,11 @@ const url = 'https://johnfrncsbnfcio.github.io/project-ph-network-finder-json-st
 
 var arr = []
 
-const smart = 'blob/master/resources/Dito.png'
-const globe = 'blob/master/resources/Dito.png'
-const sun = 'blob/master/resources/Dito.png'
-const dito = 'blob/master/resources/Dito.png'
-const unknown = 'blob/master/resources/Dito.png'
+const smart = './resources/Dito.png'
+const globe = './resources/Dito.png'
+const sun = './resources/Dito.png'
+const dito = './resources/Dito.png'
+const unknown = './resources/Dito.png'
 
 $.getJSON(url, function (data) {
     arr.push.apply(arr, data)
@@ -54,6 +54,6 @@ input.oninput = function () {
 
     } else {
         // return result.innerHTML = "No record found."
-        document.querySelector('#image').src = 'blob/master/resources/Dito.png';
+        document.querySelector('#image').src = './resources/Dito.png';
     }
 }
