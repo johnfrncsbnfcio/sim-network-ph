@@ -3,11 +3,11 @@ const url = 'https://johnfrncsbnfcio.github.io/project-ph-network-finder-json-st
 
 var arr = []
 
-const smart = './resources/Dito.png'
-const globe = './resources/Dito.png'
-const sun = './resources/Dito.png'
+const smart = './resources/SmartTNT.png'
+const globe = './resources/GlobeTM.png'
+const sun = './resources/Sun.png'
 const dito = './resources/Dito.png'
-const unknown = './resources/Dito.png'
+const unknown = './resources/Unknown.png'
 
 $.getJSON(url, function (data) {
     arr.push.apply(arr, data)
