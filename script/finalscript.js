@@ -54,6 +54,6 @@ input.oninput = function () {
 
     } else {
         // return result.innerHTML = "No record found."
-        document.querySelector('#image').src = './resources/Dito.png';
+        document.querySelector('#image').src = './resources/Unknown.png';
     }
 }
