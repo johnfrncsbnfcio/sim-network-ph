@@ -1,6 +1,9 @@
 const inputField = document.querySelector('.search')
+
+// Get data from github repo, json file.
 const url = 'https://johnfrncsbnfcio.github.io/project-ph-network-finder-json-storage/written.json'
 
+// Written.json data to arr[]
 var arr = []
 
 const smart = './resources/SmartTNT.png'
@@ -9,21 +12,26 @@ const sun = './resources/Sun.png'
 const dito = './resources/Dito.png'
 const unknown = './resources/Unknown.png'
 
+// Fetching data from URL 
 $.getJSON(url, function (data) {
-    arr.push.apply(arr, data)
+    arr.push.apply(arr, data) // Inserting the data
 })
 
+
+// Receive every input type from user
 input.oninput = function () {
     input.value = input.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1')
     const index = arr.find(arr => arr.number == input.value)
 
-
+    // Validate if received undefined from data
     if (index !== undefined) {
 
+
+        // To capitalize first letter if result want to be TEXT
         //const str = index.network.slice(1)
         //const capitalizeFirstLetter = index.network.charAt(0).toUpperCase() + str
 
-        
+        // Check what network receive
         switch (index.network) {
 
             case "smart":
@@ -57,3 +65,5 @@ input.oninput = function () {
         document.querySelector('#image').src = unknown;
     }
 }
+
+// End of script

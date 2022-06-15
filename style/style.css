@@ -120,7 +120,7 @@ header > h1 {
 .content>section>aside>p {
 
     font-family: 'montserrat', serif;
-
+    font-size: .8rem;
     font-weight: 300;
 }
 
@@ -128,7 +128,7 @@ header > h1 {
 .content>section>aside>.title {
     margin: .5rem 0rem;
     text-align: center;
-
+    font-weight: 500;
     border-bottom: 2px solid white;
 }
 
